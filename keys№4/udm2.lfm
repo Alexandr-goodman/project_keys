@@ -1,0 +1,70 @@
+object FMain: TFMain
+  Left = 773
+  Height = 365
+  Top = 765
+  Width = 500
+  Caption = 'FMain'
+  ClientHeight = 365
+  ClientWidth = 500
+  LCLVersion = '4.8.0.0'
+  OnCreate = FormCreate
+  object DBGr: TDBGrid
+    Left = 32
+    Height = 128
+    Top = 112
+    Width = 448
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSo
+    TabOrder = 0
+  end
+  object Button_SaveAll: TButton
+    Left = 304
+    Height = 25
+    Top = 248
+    Width = 120
+    Caption = 'Сохранить все'
+    TabOrder = 1
+    OnClick = Button_SaveAllClick
+  end
+  object Button_Load: TButton
+    Left = 32
+    Height = 25
+    Top = 248
+    Width = 120
+    Caption = 'Загрузить данные'
+    TabOrder = 2
+    OnClick = Button_LoadClick
+  end
+  object Button_DeleteClick: TButton
+    Left = 184
+    Height = 25
+    Top = 64
+    Width = 75
+    Caption = 'удалить'
+    TabOrder = 3
+    OnClick = Button_DeleteClick
+  end
+  object Button_AddClick: TButton
+    Left = 40
+    Height = 25
+    Top = 64
+    Width = 75
+    Caption = 'добавить'
+    TabOrder = 4
+    OnClick = Button_AddClick
+  end
+  object Button_EditClick: TButton
+    Left = 352
+    Height = 25
+    Top = 64
+    Width = 88
+    Caption = 'редактировать'
+    TabOrder = 5
+    OnClick = Button_EditClick
+  end
+  object DataSo: TDataSource
+    DataSet = dm.SQLQue
+    Top = 65520
+  end
+end

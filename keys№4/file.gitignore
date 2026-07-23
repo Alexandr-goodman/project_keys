@@ -1,0 +1,9 @@
+db_config.ini
+*.exe
+*.dbg
+*.compiled
+lib/
+backup/
+*.ppu
+*.o
+*.lps
