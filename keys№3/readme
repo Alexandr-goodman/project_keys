@@ -1,1 +1,3 @@
-
+Design a "Tourism" database (list of services provided, tour booking, etc.). 
+When designing the database, you need to create 4-5 tables for the subject area: 3-4 reference tables and 1 variable information table. 
+Create primary keys for all tables. Build relationships between tables using foreign keys: the attributes of the variable information table should reference the key attributes of the reference tables.
